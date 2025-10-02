@@ -2,6 +2,8 @@
 // 描述:将给出的链表中的节点每 k 个一组翻转，返回翻转后的链表, 如果链表中的节点数不是 k 的倍数，将最后剩下的节点保持原样
 // 要求空间复杂度 O(1)，时间复杂度 O(n)
 // 数据范围： 链表长度 0 <= size <= 2000, 1 <= k <= 2000, 链表中每个节点的值满足|val| <= 1000
+
+
 /**
  * struct ListNode {
  *	int val;
@@ -35,7 +37,7 @@ public:
         ListNode* cur = head->next;
         ListNode* next;
         ListNode* start = head; // 翻转前该组的头节点
-        ListNode* prevhead = sentinel; // 上一组的尾节点
+        ListNode* prevEnd = sentinel; // 上一组的尾节点
         for (int i = 0; i < len / k; i++) {
             for (int j = 1; j < k; j++) {
                 next = cur->next;
@@ -48,8 +50,8 @@ public:
             // cur: 下一组翻转前的头节点
             // start: 该组的尾节点
 
-            prevhead->next = prev;
-            prevhead = start;
+            prevEnd->next = prev;
+            prevEnd = start;
 
             start->next = cur;
             start = cur;
