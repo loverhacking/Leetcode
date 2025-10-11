@@ -7,6 +7,7 @@
 
 ## 链表合并
 * `Merge.cpp`:合并两个排序的链表
+* `MergeKLists.cpp`:合并k个排序链表
 
 ## 链表有环
 *  `hasCycle.cpp`:判断链表中是否有环
@@ -21,6 +22,12 @@
 
 ## 链表相加
 `addInList`: 链表相加-II
+
+## 链表排序
+`sortInList`: 链表排序
+
+## 判断链表是回文结构
+`isPail`: 判断链表是回文结构 
 
 ## 链表奇偶重排
 `oddEvenLis`:链表奇偶重排
