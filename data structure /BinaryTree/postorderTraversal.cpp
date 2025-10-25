@@ -37,6 +37,7 @@ public:
     }
 
     // 非递归版本
+    /*
     vector<int> postorderTraversal(TreeNode* root) {
         // write code here
         vector<int> v;
@@ -62,5 +63,5 @@ public:
             }
         }
         return v;
-    }
+    }*/
 };

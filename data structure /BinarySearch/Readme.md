@@ -3,4 +3,5 @@
 *  `Find.cpp`: 二分查找-I
 * `search.cpp`:二维数组中的查找
 * `findPeakElement.cpp`: 寻找峰值
+* `InversePairs.cpp`: 数组中的逆序对
 * `minNumberInRotateArray`: 旋转数组中的最小数字
